@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene_scenarios.unity
     guid: 086ae424fbd3fc64da143777a8c589a9
+  - enabled: 1
+    path: Assets/Scenes/Scene_partie_dialogue.unity
+    guid: 13af80877f00d264db48f1d9f07d0b98
   m_configObjects: {}
