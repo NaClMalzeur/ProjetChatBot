@@ -1,18 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-/**
-    Classe enregistrant les actions du joueur dans un fichier
-    Enregistre la date, le scénario, l'action
-    Les logs sont créés à partir des messages consoles (Debug.Log())
- */
-public class Logger : MonoBehaviour
+public class FaceAnimations : MonoBehaviour
 {
+
+    public Image image;
+    
+
+    public SpriteRenderer spriteIdle;
+    public SpriteRenderer spriteTransition;
+
+    public float timeBetweenTransition;
+    float timeRef;
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
