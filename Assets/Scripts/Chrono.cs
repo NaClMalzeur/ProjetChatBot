@@ -17,10 +17,17 @@ public class Chrono : MonoBehaviour
     public float timeToWarning = 5f;
 
     public bool isPaused;
+
+    public bool isStopped;
+    public bool isOver;
+
     public Sprite sprite_resume;
     public Sprite sprite_pause;
 
     IEnumerator  IEchrono;
+
+    [HideInInspector]
+    public PartieManager partieManager;
 
     // Start is called before the first frame update
     void Start()
@@ -47,31 +54,33 @@ public class Chrono : MonoBehaviour
     } 
 
     string GetSecondsToTimer(float time) {
-        int heures = (int)time / 3600;
-        int minutes = (int)(time / 60 -  heures * 60);
-        int secondes = (int)(time % 60);
-
-        return (heures > 0 ? heures.ToString() + ":" : "") +  minutes.ToString("D2") + ":" + (secondes).ToString("00");//.0").Replace(",", ".");
+        int heures = Mathf.Abs((int)time / 3600);
+        int minutes = Mathf.Abs((int)(time / 60 -  heures * 60));
+        int secondes = Mathf.Abs((int)(time % 60));
+        string isNegatif = (int)time < 0  ? "-" : ""; 
+        return  isNegatif + (heures > 0 ? heures.ToString() + ":" : "") +  minutes.ToString("D2") + ":" + (secondes).ToString("00");
     }
 
     // Update is called once per frame
     IEnumerator Decount()
     {
-
         // Tant qu'on a encore du temps
-        while (timeLeft > 0) {
+        while (!isStopped) {
 
-            if (timeLeft < timeToWarning) 
+            if (timeLeft < timeToWarning) { 
                 txt_temps.color = Color.red;
+            } 
+
+            if (!isOver && timeLeft < 0) {
+                isOver = true;
+                Debug.Log("Chrono fini");
+                partieManager.ShowPanelGameOver();
+            }
 
             // on raffraichit le chronomètre
             txt_temps.text = GetSecondsToTimer(timeLeft);
             timeLeft -= Time.deltaTime;
         yield return null;
         }
-
-        // notifie la fin du chrono
-        Debug.Log("Chrono fini");
-        txt_temps.text = GetSecondsToTimer(0f);
     }
 }
