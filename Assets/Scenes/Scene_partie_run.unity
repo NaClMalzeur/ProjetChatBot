@@ -567,6 +567,7 @@ MonoBehaviour:
   selected_img: {fileID: 0}
   list_enigmes_go: {fileID: 0}
   chrono: {fileID: 562123748}
+  panel_partie_perdu: {fileID: 978114879}
 --- !u!4 &96062329
 Transform:
   m_ObjectHideFlags: 0
@@ -2752,6 +2753,7 @@ GameObject:
   - component: {fileID: 978114880}
   - component: {fileID: 978114882}
   - component: {fileID: 978114881}
+  - component: {fileID: 978114883}
   m_Layer: 0
   m_Name: Panel_chrono_over
   m_TagString: Untagged
@@ -2819,6 +2821,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978114879}
   m_CullTransparentMesh: 0
+--- !u!225 &978114883
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978114879}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &997700784
 GameObject:
   m_ObjectHideFlags: 0
@@ -4607,7 +4621,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 447436038}
+      - m_Target: {fileID: 978114879}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
