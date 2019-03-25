@@ -567,6 +567,7 @@ MonoBehaviour:
   selected_img: {fileID: 0}
   list_enigmes_go: {fileID: 0}
   chrono: {fileID: 562123748}
+  panel_partie_perdu: {fileID: 0}
 --- !u!4 &96062329
 Transform:
   m_ObjectHideFlags: 0
