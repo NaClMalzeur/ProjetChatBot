@@ -29,6 +29,10 @@ public class Logger : MonoBehaviour
     }
      void HandleLog(string logString, string stackTrace, LogType type)
     {
-        Debug.Log("Yolo : "+logString);
+        if(type == LogType.Log && logString.Contains("[Log]"))
+            {
+                logString = logString.Replace("[Log]","");
+                Debug.Log("Write in Logger : "+logString);
+            }
     }
 }

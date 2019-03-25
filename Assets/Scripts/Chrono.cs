@@ -35,8 +35,9 @@ public class Chrono : MonoBehaviour
         if (txt_temps == null) {
             Debug.LogError("Chrono: le gameobject est null !");
         }
-        //Logger.OnEnable();
-        //Debug.Log("la");
+
+        Debug.Log("[Log]Coucou");
+
         timeLeft = nbMinutes * 60;
 
         IEchrono =  Decount(); 
