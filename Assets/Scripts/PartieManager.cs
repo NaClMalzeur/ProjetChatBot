@@ -63,11 +63,39 @@ public class PartieManager : MonoBehaviour
         canvasGroup.interactable = isVisible;
         canvasGroup.blocksRaycasts = isVisible;
     }
+    /*
+     propose l'indice le plus proche parmi les métriques
+    */
+    /* Indice */ public void ProposerIndice() {
+        Debug.Log("Proposer indice");
+        // return indice;
+    }
+
+
+    public void DemanderIndice() {
+        /*List<> enigmesProches =  */GetEnigmesProches();
+
+        // Récupère les énigmes proches 
+        // Affiche le panel de discussion
+        // Demande quelle énigme est la bonne parmi la liste
+        // Quand trouvé, propose indice
+        
+
+    }
+
+    /* List<> */ public void GetEnigmesProches() {
+        Debug.Log("Liste des indices les plus probables");
+        // return list;
+    }
+
 
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        
+
+        // Si proche d'une demande d'indice, propose un indice de cette énigme
+        /* Indice indice_propose = */ 
+
     }
 }
