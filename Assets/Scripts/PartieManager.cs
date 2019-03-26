@@ -23,7 +23,7 @@ public class PartieManager : MonoBehaviour
 
     public Chrono chrono;
 
-    public GameObject panel_partie_perdu;
+    public GameObject panel_partie_perdue;
 
 
     // Start is called before the first frame update
@@ -42,14 +42,13 @@ public class PartieManager : MonoBehaviour
         }
         
         chrono.partieManager = this;
-
-        SetPanelVisible(panel_partie_perdu, false);
+        SetPanelVisible(panel_partie_perdue, false);
     }
 
     public void ShowPanelGameOver() {
         Debug.Log("Partie Finie");
 
-        SetPanelVisible(panel_partie_perdu, true);
+        SetPanelVisible(panel_partie_perdue, true);
     }
 
     public void SetPanelVisible(GameObject panel, bool isVisible) {
