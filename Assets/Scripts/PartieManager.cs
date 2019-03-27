@@ -15,6 +15,8 @@ using UnityEngine.UI;
 public class PartieManager : MonoBehaviour
 {
 
+
+
     public Image img_indice;
 
     public Image selected_img; // l'image montrant l'énigme séléctionnée
@@ -51,6 +53,8 @@ public class PartieManager : MonoBehaviour
         SetPanelVisible(panel_partie_perdue, true);
     }
 
+
+
     public void SetPanelVisible(GameObject panel, bool isVisible) {
         CanvasGroup canvasGroup = panel.GetComponent<CanvasGroup>();
 
@@ -63,6 +67,9 @@ public class PartieManager : MonoBehaviour
         canvasGroup.interactable = isVisible;
         canvasGroup.blocksRaycasts = isVisible;
     }
+
+
+
     /*
      propose l'indice le plus proche parmi les métriques
     */

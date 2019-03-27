@@ -2656,6 +2656,7 @@ GameObject:
   - component: {fileID: 394760872218708015}
   - component: {fileID: 394760872218708009}
   - component: {fileID: 394760872218708008}
+  - component: {fileID: 4632332047442626080}
   m_Layer: 0
   m_Name: Panel_partie_in
   m_TagString: Untagged
@@ -2724,6 +2725,18 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!225 &4632332047442626080
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394760872218708014}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &4689853915281109374
 GameObject:
   m_ObjectHideFlags: 0
