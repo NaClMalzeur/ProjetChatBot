@@ -1,0 +1,271 @@
+{ 
+  "enigmes" : [
+    {
+      "name": "L",
+      "num": 1,
+      "apres": [],
+      "temps": 5.0
+    },
+    {
+      "name": "Losange",
+      "num": 2,
+      "apres": [1],
+      "temps": 6.30
+    },
+    {
+      "name": "Carre",
+      "num": 3,
+      "apres": [2],
+      "temps": 8.0
+    },
+    {
+      "name": "Sablier",
+      "num": 4,
+      "apres": [3],
+      "temps": 3.0
+    },
+    {
+      "name": "Triangle",
+      "num": 5,
+      "apres": [4],
+      "temps": 5.0
+    },
+    {
+      "name": "Rond",
+      "num": 6,
+      "apres": [5],
+      "temps": 10.0
+    },
+    {
+      "name": "Lune",
+      "num": 7,
+      "apres": [6],
+      "temps": 12.30
+    },
+    {
+      "name": "Croix",
+      "num": 9,
+      "apres": [7],
+      "temps": 11.0
+    },
+    {
+      "name": "Etoile",
+      "num": 8,
+      "apres": [8],
+      "temps": 11.0
+    },
+    {
+      "name": "Y",
+      "num": 10,
+      "apres": [9],
+      "temps": 5.0
+    },
+    {
+      "name": "Hexagone",
+      "num": 11,
+      "apres": [10],
+      "temps": 8.0
+    }
+  ],
+
+  "indices" : [
+    {
+      "enigme": "L",
+      "rang": 1,
+      "image": "L_1.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "L",
+      "rang": 2,
+      "image": "L_2.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "L",
+      "rang": 3,
+      "image": "L_3.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Losange",
+      "rang": 1,
+      "image": "Losange_1.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Losange",
+      "rang": 2,
+      "image": "Losange_2.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Losange",
+      "rang": 3,
+      "image": "Losange_3.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Carre",
+      "rang": 1,
+      "image": "Carre_1.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Carre",
+      "rang": 2,
+      "image": "Carre_2.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Carre",
+      "rang": 3,
+      "image": "Carre_3.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Sablier",
+      "rang": 1,
+      "image": "Sablier_1.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Sablier",
+      "rang": 2,
+      "image": "Sablier_2.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Sablier",
+      "rang": 3,
+      "image": "Sablier_3.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Triangle",
+      "rang": 1,
+      "image": "Triangle_1.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Triangle",
+      "rang": 2,
+      "image": "Triangle_2.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Triangle",
+      "rang": 3,
+      "image": "Triangle_3.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Rond",
+      "rang": 1,
+      "image": "Rond_1.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Rond",
+      "rang": 2,
+      "image": "Rond_2.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Rond",
+      "rang": 3,
+      "image": "Rond_3.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Lune",
+      "rang": 1,
+      "image": "Lune_1.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Lune",
+      "rang": 2,
+      "image": "Lune_2.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Lune",
+      "rang": 3,
+      "image": "Lune_3.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Croix",
+      "rang": 1,
+      "image": "Croix_1.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Croix",
+      "rang": 2,
+      "image": "Croix_2.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Croix",
+      "rang": 3,
+      "image": "Croix_3.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Etoile",
+      "rang": 1,
+      "image": "Etoile_1.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Etoile",
+      "rang": 2,
+      "image": "Etoile_2.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Etoile",
+      "rang": 3,
+      "image": "Etoile_3.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Y",
+      "rang": 1,
+      "image": "Y_1.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Y",
+      "rang": 2,
+      "image": "Y_2.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Y",
+      "rang": 3,
+      "image": "Y_3.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Hexagone",
+      "rang": 1,
+      "image": "Hexagone_1.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Hexagone",
+      "rang": 2,
+      "image": "Hexagone_2.jpg",
+      "description": ""
+    },
+    {
+      "enigme": "Hexagone",
+      "rang": 3,
+      "image": "Hexagone_3.jpg",
+      "description": ""
+    }
+  ]
+}
