@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScenarioDur : MonoBehaviour
 {
 
-    Enigme[] enigmes = new Enigme[11]
+    static Enigme[] enigmes = new Enigme[11]
     {
         new Enigme("L",1,new int[1] {0},5.0f),
         new Enigme("Losange",2,new int[1] {1},6.3f),
@@ -20,7 +20,7 @@ public class ScenarioDur : MonoBehaviour
         new Enigme("Hexagone",11,new int[1] {10},8.0f)
     };
 
-    Indice[] indices = new Indice[33]
+    static Indice[] indices = new Indice[33]
     {
         new Indice("L","L_1.jpg","",1),
         new Indice("L","L_2.jpg","",2),
@@ -56,5 +56,7 @@ public class ScenarioDur : MonoBehaviour
         new Indice("Hexagone","Hexagone_2.jpg","",2),
         new Indice("Hexagone","Hexagone_3.jpg","",3)
     };
+
+    Scenario scenDur = new Scenario(enigmes, indices);
 
 }
