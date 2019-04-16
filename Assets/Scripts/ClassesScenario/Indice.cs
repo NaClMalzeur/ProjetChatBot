@@ -5,8 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class Indice
 {
-    private string enigme, image, description;
-    private int rang;
+    public string enigme, image, description;
+    public int rang;
+
+    public Sprite sprite;
 
     public Indice(string enigme, string image, string description, int rang)
     {
@@ -14,6 +16,9 @@ public class Indice
         this.image = image;
         this.description = description;
         this.rang = rang;
+
+    
+
     }
 
     public static Indice CreateFromJSON(string jsonString)

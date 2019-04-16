@@ -5,10 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class Enigme
 {
-    private string name;
-    private int num;
-    private int[] suite;
-    private float temps;
+    public string name;
+    public int num;
+    public int[] suite;
+    public float temps;
 
     public Enigme(string name, int num, int[] suite, float temps)
     {

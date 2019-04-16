@@ -23,4 +23,22 @@ public class IO
 
         return null; // STUB
     }
+
+
+    public static Sprite GetIndiceSprite(Indice indice) {
+
+        if (indice.sprite == null) {
+            Debug.Log("GetIndiceSprite : " + indice.enigme + " " + indice.rang + " first load : " + indice.image);
+
+            if (Resources.Load<Sprite>("Sprites/" + indice.image) == null) {
+                Debug.Log("OSCOUR");
+            }
+
+            indice.sprite = Resources.Load<Sprite>("Sprites/" + indice.image);
+        }
+
+        return indice.sprite;
+    }
+
+
 }

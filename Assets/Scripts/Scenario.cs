@@ -7,10 +7,9 @@ using System.IO;
 */
 [System.Serializable]
 public class Scenario
-{
-
-    private Enigme[] enigmes;
-    private Indice[] indices;
+{ 
+    public Enigme[] enigmes;
+    public Indice[] indices;
 
     public Scenario(Enigme[] enigmes, Indice[] indices)
     {
